@@ -17,7 +17,7 @@ You must have sideloading or developer mode enabled to install this app. To enab
 ## Features
 * Open and browse UE4 pak files including encrypted ones
 * Extract any file from the pak
-* Automatically decrypts encrypted files when extracted
+* Automatically decrypt encrypted files when extracted
 * Export file list
 
 ## In Development
