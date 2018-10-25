@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="ModnitePakExplorer" Publisher="CN=EDF71249-67E4-469F-A016-B9468FE02E62" Version="1.1.2.0" />
+  <mp:PhoneIdentity PhoneProductId="6fd825e4-f873-49ac-92e3-dea2e4d3b60f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Modnite PakExplorer</DisplayName>
+    <PublisherDisplayName>https://modnite.net</PublisherDisplayName>
+    <Logo>Assets\AppIcons\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="PakExplorer.App">
+      <uap:VisualElements DisplayName="Modnite PakExplorer" Square150x150Logo="Assets\AppIcons\Square150x150Logo.png" Square44x44Logo="Assets\AppIcons\Square44x44Logo.png" Description="Fortnite pak file browser" BackgroundColor="#0A5BC4">
+        <uap:DefaultTile ShortName="PakExplorer" Square71x71Logo="Assets\AppIcons\SmallTile.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#0A5BC4" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>

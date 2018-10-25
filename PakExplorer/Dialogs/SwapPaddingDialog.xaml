@@ -1,0 +1,23 @@
+﻿<ContentDialog
+    x:Class="PakExplorer.Dialogs.SwapPaddingDialog"
+    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    
+    Title="Swap File"
+    PrimaryButtonText="Swap"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <StackPanel Orientation="Vertical">
+        <TextBlock TextWrapping="WrapWholeWords">
+            The new file is smaller than the existing file. What should the new file be padded with?
+            <LineBreak/>
+        </TextBlock>
+        <ComboBox Width="250" x:Name="paddingTypeComboBox"/>
+    </StackPanel>
+</ContentDialog>
